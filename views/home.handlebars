@@ -5,7 +5,7 @@
   }
 
   button {
-    font-size: 2vh;
+    font-size: 3vh;
     margin-top: 5vh;
     background-color: white;
     border: 1px solid black;
@@ -22,8 +22,9 @@
 </style>
 
 <span>
-  <h1>{{result.sentence}}</h1>
-  {{#if result.back}}
-  <button type="button" value="home" onclick="location.href='/'">&laquo;返回</button>
-  {{/if}}
+  <h1>Welcom!{{userInfo.firstName}}</h1>
+  <form action="/logout" method='post'> <button type="submit" value="logout"
+      onclick="location.href='/logout'">&laquo;Logout</button>
+  </form>
+
 </span>

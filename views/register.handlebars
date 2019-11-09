@@ -20,7 +20,7 @@
     text-align: center;
   }
 
-  div .signIn {
+  div .register {
     margin-bottom: 5vh;
   }
 
@@ -55,24 +55,30 @@
 </style>
 <div class="d-block ">
   <div class="loginTitle">
-    <h1>Account Login</h1>
+    <h1>Register</h1>
   </div>
   <div>
-    <form method="Post" action="/login">
-      <div class="signIn">
+    <form method="Post" action="/register">
+      <div class="register">
+        <input name="name" id="email" placeholder="  Name">
+      </div>
+      <div class="register">
         <input type="Email" name="email" id="email" placeholder="  Email">
       </div>
-      <div class="signIn">
+      <div class="register">
         <input type="password" name="password" placeholder="  Password">
       </div>
       <div class='d-flex justify-content-between align-item-center'>
-        <button type="submit">Sign in</button>
-        <button type="button" value="register" onclick="location.href='/register'">Register</button>
+        <button type="submit">Register</button>
       </div>
-      {{#if errorString}}
-      <span class="alert">{{errorString}}</span>
+      {{#if errString}}
+      <span class="alert">{{errString}}</span>
+      {{/if}}
+      {{#if errString1}}
+      <span class="alert">{{errString1}}</span>
       {{/if}}
     </form>
-
   </div>
+</div>
+</div>
 </div>
