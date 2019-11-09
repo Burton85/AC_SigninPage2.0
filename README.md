@@ -1,6 +1,10 @@
-# Sign in Page
+# Sign in Page 2.0
 
 A demo project of Sign in Page which built with Node.js and Express Framework.
+
+## Updating
+
+New version import Session enable to remember user's login status,besides users can register a new account either.
 
 ## Getting Started
 
@@ -20,7 +24,7 @@ express-handlebars ^ 3.1.0
 1.Download AC_RestaurantList directory from github
 
 ```
-$ git clone https://github.com/Burton0528/AC_SigninPage
+$ git clone https://github.com/Burton0528/AC_SigninPage2.0
 ```
 
 2.Open AC_RestaurantList by Terminal
@@ -47,3 +51,4 @@ go to http://localhost:3000
 
 1. Sign in with email and password.
 2. Demo account: email: "nick@shield.com",password: "password"
+3. Register your new account.
